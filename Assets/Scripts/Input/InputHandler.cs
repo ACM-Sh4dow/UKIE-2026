@@ -13,6 +13,13 @@ public class InputHandler : MonoBehaviour
         ProtagonistController.Instance.SyncLookInput(input.ReadValue<Vector2>());
     }
 
+    public void RecieveCameraChangeInput(InputAction.CallbackContext input)
+    {
+        if (!input.started) return;
+
+        PlayerManager.SyncCameraMove(input.ReadValue<Vector2>());
+    }
+
     //public void RecieveInteractInput(InputAction.CallbackContext input)
     //{
     //    if (!input.started) return;
