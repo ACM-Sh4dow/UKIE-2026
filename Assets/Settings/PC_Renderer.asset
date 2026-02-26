@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pixelate
   m_Active: 1
   settings:
-    downsampleFactor: 3
-    colors: []
+    downsampleFactor: 4
+    colors:
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 1, g: 1, b: 1, a: 0}
+    - {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0}
+    - {r: 0.735849, g: 0.735849, b: 0.735849, a: 0}
+    - {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 0}
+    - {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 0}
+    - {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 0}
+    - {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0}
+    - {r: 0, g: 0.062930584, b: 1, a: 0}
+    - {r: 1, g: 0, b: 0.08064842, a: 0}
+    - {r: 0.96249545, g: 1, b: 0, a: 0}
+    - {r: 0.18523192, g: 1, b: 0, a: 0}
   quantiseShader: {fileID: 7200000, guid: 70d2e2b26fb9fee429928369437ff773, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
