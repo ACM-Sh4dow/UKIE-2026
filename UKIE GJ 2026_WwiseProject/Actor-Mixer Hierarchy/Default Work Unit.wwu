@@ -1,6 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Player" ID="{E2578381-62F3-427E-833B-F8CFFADFBB7C}" ShortID="584352231">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{95438C2D-58D9-44AD-B247-A9EA93B9365A}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Photo" ID="{EB060D65-D684-4710-B2C4-FA951EE50E27}" ShortID="299843382">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{45811478-A9BA-435F-8517-AD806EB73E3C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Camera_01" ID="{93B3E7E3-1431-4465-9358-C4BE73D0A824}" ShortID="734086433">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Camera_01" ID="{01B680F6-37C3-427E-8EEB-F310CE865969}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0310537745555242"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0310537745555242"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Camera_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="986840028"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Camera_01" ID="{01B680F6-37C3-427E-8EEB-F310CE865969}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Camera_02" ID="{515B21EE-959A-4803-BF92-71DEF8F1E325}" ShortID="102795637">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Camera_02" ID="{3EB856D5-12AF-4B79-BA6E-23AA7CFFEE2D}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0428434300990332"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0428434300990332"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Camera_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="348632390"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Camera_02" ID="{3EB856D5-12AF-4B79-BA6E-23AA7CFFEE2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Camera_03" ID="{42FA5AF6-F9FC-4DFC-95E6-E205747B0EA2}" ShortID="602214535">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Camera_03" ID="{84F7C590-FB1B-4C9C-ABFA-BE4D76FEA55A}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0757719178994497"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0757719178994497"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Camera_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1013596613"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Camera_03" ID="{84F7C590-FB1B-4C9C-ABFA-BE4D76FEA55A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Camera_Switch" ID="{469DC531-E5AB-46F1-A971-54FF662F88B9}" ShortID="578655297">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>56</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{34902D39-4E1F-460D-BF7B-0DE1D9C37A6A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="7.5"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{37BBB966-DD04-4DF9-ABAD-C7D3DCBF8AC6}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Camera_Switch" ID="{EE6A6894-85B1-4F42-9334-57FCEB95313F}">
+									<Language>SFX</Language>
+									<AudioFile>Camera_Switch.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="436068188"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Camera_Switch" ID="{EE6A6894-85B1-4F42-9334-57FCEB95313F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Movement" ID="{FC6CC7C4-B2D9-4460-B13E-2A911F6D47DE}" ShortID="228017126">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Movement" ID="{F47537DF-41EE-4B4B-A581-BDB5441B1742}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="427.083"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.342857142857143"/>
+										<Property Name="FadeInShape" Type="int16" Value="8"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.03809523809524"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.94285714285714"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Movement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="880057183"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{C34265A4-EA68-49A4-9E41-1BD23AC5A24A}" ShortID="501309765">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<Custom>
+															<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{6FFEC088-E882-4998-8A07-62E53021579E}" ShortID="53458773">
+																<PropertyList>
+																	<Property Name="EnvelopeAttackTime" Type="Real64" Value="5"/>
+																	<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.208"/>
+																</PropertyList>
+															</ModulatorEnvelope>
+														</Custom>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8A8DD640-E9DC-49AC-976E-AE48090FFE1E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-5.07985</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Movement" ID="{F47537DF-41EE-4B4B-A581-BDB5441B1742}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{A697618E-2C50-4651-85F4-6805694383D0}">
+							<PropertyList>
+								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Up_Left" ID="{D85C01FA-9866-462D-8FBC-286180D3D9B1}">
+									<PointList>
+										<Point>
+											<XPos>-8</XPos>
+											<YPos>15</YPos>
+											<ZPos>20</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Up_Right" ID="{C2F1EED3-F9BA-4D70-90BC-8386A159F8BA}">
+									<PointList>
+										<Point>
+											<XPos>8</XPos>
+											<YPos>15</YPos>
+											<ZPos>20</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Down_Left" ID="{FEABFBE3-8D49-4559-9200-286AF5B3B62C}">
+									<PointList>
+										<Point>
+											<XPos>-8</XPos>
+											<YPos>15</YPos>
+											<ZPos>-20</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Down_Right" ID="{B4865304-B388-4DBB-BA7D-9C8D55E695EE}">
+									<PointList>
+										<Point>
+											<XPos>8</XPos>
+											<YPos>15</YPos>
+											<ZPos>-20</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Movement_Start" ID="{B36E9E39-0570-43D7-BEC0-5F9FD272DACE}">
+					<ChildrenList>
+						<Action Name="" ID="{15A1A92C-A846-4B9A-AAA0-F63922558495}" ShortID="905414302">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement" ID="{FC6CC7C4-B2D9-4460-B13E-2A911F6D47DE}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Movement_Stop" ID="{65A95674-CDF2-458D-A684-58B514AD4ED4}">
+					<ChildrenList>
+						<Action Name="" ID="{336432D3-42E8-4E5E-BD15-8C8406BB3CBE}" ShortID="536660999">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement" ID="{FC6CC7C4-B2D9-4460-B13E-2A911F6D47DE}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Take_Photo" ID="{5EB708FB-A900-4B6B-9010-A92F713DB3A9}">
+					<ChildrenList>
+						<Action Name="" ID="{4F7DE41D-E6F3-4E5C-912C-DC41C17E6429}" ShortID="723231737">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Photo" ID="{EB060D65-D684-4710-B2C4-FA951EE50E27}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Switch_Camera" ID="{85F7A17D-3298-4C18-8A83-F60CFB087AA4}">
+					<ChildrenList>
+						<Action Name="" ID="{CD263371-94C8-499A-B13D-182AD02BC933}" ShortID="916698477">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Camera_Switch" ID="{469DC531-E5AB-46F1-A971-54FF662F88B9}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
