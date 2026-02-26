@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5cfb63d19daf845b0413e6022b25083
     GuidInternal: 
-    m_lastTime: -8584295006294001693
+    m_lastTime: -8584294853745701609
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Reverb
+      guid: 2d8c4395d958ad44b247a9ea93b9365a
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c5cfb63d19daf845b0413e6022b25083
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 2d8c4395d958ad44b247a9ea93b9365a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -79,7 +96,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks WU
     guid: 0e1ce72fe564f84abf440246125e9b2f
     GuidInternal: 
-    m_lastTime: -8584295006293949660
+    m_lastTime: -8584294853745653428
     List:
     - name: Main
       guid: a1294a370e2c8747b0c7557dbcdfb016
@@ -107,8 +124,76 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8f1f2d81bf10524c87969d208461c1b5
     GuidInternal: 
-    m_lastTime: -8584295006294125240
-    List: []
+    m_lastTime: -8584294853750134331
+    List:
+    - name: Movement_Start
+      guid: 399e6eb37005d743bec05f9fd272dace
+      id: 308747891
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Movement_Start
+        ObjectType: 3
+        guid: 399e6eb37005d743bec05f9fd272dace
+      Path: Events\Default Work Unit\Movement_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Movement_Stop
+      guid: 7456a965f2cd8d45a68458b514ad4ed4
+      id: 1303188401
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Movement_Stop
+        ObjectType: 3
+        guid: 7456a965f2cd8d45a68458b514ad4ed4
+      Path: Events\Default Work Unit\Movement_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Switch_Camera
+      guid: 7da1f7859832184c8a83f60cfb087aa4
+      id: 203077237
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Switch_Camera
+        ObjectType: 3
+        guid: 7da1f7859832184c8a83f60cfb087aa4
+      Path: Events\Default Work Unit\Switch_Camera
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Take_Photo
+      guid: fb08b75e00a96b4b9010a92f713db3a9
+      id: 4088074013
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Take_Photo
+        ObjectType: 3
+        guid: fb08b75e00a96b4b9010a92f713db3a9
+      Path: Events\Default Work Unit\Take_Photo
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
