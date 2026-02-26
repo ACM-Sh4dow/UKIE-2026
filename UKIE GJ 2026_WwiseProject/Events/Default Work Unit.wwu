@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>
