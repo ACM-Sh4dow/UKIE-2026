@@ -10,16 +10,16 @@ public class ProtagonistController : MonoBehaviour
     public Camera camera;
     public static ProtagonistController Instance;
 
-    public static bool walkingStarted;
-    public static bool walkingFinished;
+    public bool walkingStarted;
+    public bool walkingFinished;
 
     public Coroutine SoundCoroutine;
     public float SecondsBetweenFootsteps;
 
     // public PerspectivePuzzleSolve perspectivePuzzle;
 
-    public static Vector3 playerPosition;
-    public static Quaternion playerRotation;
+    public Vector3 playerPosition;
+    public Quaternion playerRotation;
 
     public enum MovementState
     {
@@ -60,8 +60,6 @@ public class ProtagonistController : MonoBehaviour
 
     void Start()
     {
-        Instance = this;
-
         var playerCollider = GetComponent<CapsuleCollider>();
         capsuleRadius = playerCollider.radius;
         float capsuleHeight = playerCollider.height;
@@ -74,7 +72,7 @@ public class ProtagonistController : MonoBehaviour
     #endregion
     #region Synchronise Input
 
-    public static void SyncMovementInput(InputAction.CallbackContext input)
+    public void SyncMovementInput(InputAction.CallbackContext input)
     {
         if (input.started)
         {
@@ -97,7 +95,7 @@ public class ProtagonistController : MonoBehaviour
         }
     }
 
-    public static void SyncLookInput(Vector2 input)
+    public void SyncLookInput(Vector2 input)
     {
         lookInput = input;
     }
@@ -275,6 +273,11 @@ public class ProtagonistController : MonoBehaviour
 
     private void Update()
     {
+        if (Instance != this)
+        {
+            return;
+        }
+
         #region Movement
 
         Vector3 newMovementInput = new Vector3(movementInput.x, 0, movementInput.y);
