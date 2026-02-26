@@ -25,6 +25,8 @@ public class PlayerManager : MonoBehaviour
 
     public static void SyncCameraMove(Vector2 input)
     {
+        var currentPlayer = player;
+
         switch (player.gameObject.name)
         {
             case "Player 1":
@@ -47,6 +49,11 @@ public class PlayerManager : MonoBehaviour
                 else if (input == new Vector2(0, 1)) { player = players[1]; }
 
                 break;
+        }
+
+        if (player != currentPlayer)
+        {
+            // CAMERA SWITCH SFX HERE
         }
     }
 

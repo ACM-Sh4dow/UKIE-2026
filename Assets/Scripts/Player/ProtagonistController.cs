@@ -8,6 +8,7 @@ public class ProtagonistController : MonoBehaviour
     #region Variables
 
     public Camera camera;
+    public GameObject activeCameraIndicator;
     public static ProtagonistController Instance;
 
     public bool walkingStarted;
@@ -273,8 +274,13 @@ public class ProtagonistController : MonoBehaviour
 
     private void Update()
     {
-        if (Instance != this)
+        if (Instance == this)
         {
+            activeCameraIndicator.SetActive(true);
+        }
+        else
+        {
+            activeCameraIndicator.SetActive(false);
             return;
         }
 
