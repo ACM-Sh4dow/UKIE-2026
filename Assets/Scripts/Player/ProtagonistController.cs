@@ -48,8 +48,8 @@ public class ProtagonistController : MonoBehaviour
 
     private const float LeewayFraction = 0.95f;
     private const float FloatingPointErrorCheck = 0.001f;
-    private const float BottomClamp = -30;
-    private const float TopClamp = 35;
+    private const float BottomClamp = -85;
+    private const float TopClamp = 85;
     private const int RotationOffset = -30;
 
     private Vector3 velocity;
