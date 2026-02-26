@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 60df000826e1d9e47867c18fd5c015bc
   - enabled: 1
-    path: Assets/Scenes/Test Space.unity
+    path: Assets/Scenes/Main Level.unity
     guid: 5ef8a08acd7fd84419a93cdb08ece592
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
