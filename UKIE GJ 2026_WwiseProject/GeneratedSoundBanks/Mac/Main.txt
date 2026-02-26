@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	203077237	Switch_Camera			\Default Work Unit\Switch_Camera	
+	308747891	Movement_Start			\Default Work Unit\Movement_Start	
+	1303188401	Movement_Stop			\Default Work Unit\Movement_Stop	
+	4088074013	Take_Photo			\Default Work Unit\Take_Photo	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	53458773	Modulator Envelope (Custom)				
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	348632390	Camera_02	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\4B\{4B8CB8AB-5AC3-E295-84BA-7B6963F1EED0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Photo\Camera_02		130548
+	436068188	Camera_Switch	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\C3\{C345BE8C-27A3-0D7A-48AF-B12FC59BC366}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Camera_Switch		40856
+	880057183	Movement	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\57\{575DC006-156F-333D-5E12-4C5C1A5FB01C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement		1411344
+	986840028	Camera_01	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\7B\{7B4FF63A-0B26-0B90-4AF3-0F3BE13C8B15}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Photo\Camera_01		129956
+	1013596613	Camera_03	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\F6\{F65C7402-49DA-B836-C813-B074A3C2D1B9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Photo\Camera_03		159460
+

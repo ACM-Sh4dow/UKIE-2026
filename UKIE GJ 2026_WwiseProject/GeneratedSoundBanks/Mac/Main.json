@@ -10,12 +10,128 @@
     "Type": "User",
     "GUID": "{374A29A1-2C0E-4787-B0C7-557DBCDFB016}",
     "Language": "SFX",
-    "Hash": "{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}",
+    "Hash": "{A298F7FD-E68C-9D00-5164-06A4EB8E8F7C}",
     "ObjectPath": "\\SoundBanks\\Soundbanks WU\\Main",
     "ShortName": "Main",
-    "Path": "Main.bnk"
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "348632390",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Camera_02.wav",
+      "CachePath": "4B/{4B8CB8AB-5AC3-E295-84BA-7B6963F1EED0}.wem"
+     },
+     {
+      "Id": "436068188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Camera_Switch.wav",
+      "CachePath": "C3/{C345BE8C-27A3-0D7A-48AF-B12FC59BC366}.wem"
+     },
+     {
+      "Id": "880057183",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Movement.wav",
+      "CachePath": "57/{575DC006-156F-333D-5E12-4C5C1A5FB01C}.wem"
+     },
+     {
+      "Id": "986840028",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Camera_01.wav",
+      "CachePath": "7B/{7B4FF63A-0B26-0B90-4AF3-0F3BE13C8B15}.wem"
+     },
+     {
+      "Id": "1013596613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Camera_03.wav",
+      "CachePath": "F6/{F65C7402-49DA-B836-C813-B074A3C2D1B9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "308747891",
+      "Name": "Movement_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\Movement_Start",
+      "GUID": "{B36E9E39-0570-43D7-BEC0-5F9FD272DACE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "880057183"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{95438C2D-58D9-44AD-B247-A9EA93B9365A}"
+       }
+      ]
+     },
+     {
+      "Id": "1303188401",
+      "Name": "Movement_Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Movement_Stop",
+      "GUID": "{65A95674-CDF2-458D-A684-58B514AD4ED4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "203077237",
+      "Name": "Switch_Camera",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch_Camera",
+      "GUID": "{85F7A17D-3298-4C18-8A83-F60CFB087AA4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23106577",
+      "DurationMax": "0.23442669",
+      "MediaRefs": [
+       {
+        "Id": "436068188"
+       }
+      ]
+     },
+     {
+      "Id": "4088074013",
+      "Name": "Take_Photo",
+      "ObjectPath": "\\Events\\Default Work Unit\\Take_Photo",
+      "GUID": "{5EB708FB-A900-4B6B-9010-A92F713DB3A9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7152001",
+      "DurationMax": "0.98520225",
+      "MediaRefs": [
+       {
+        "Id": "348632390"
+       },
+       {
+        "Id": "986840028"
+       },
+       {
+        "Id": "1013596613"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{95438C2D-58D9-44AD-B247-A9EA93B9365A}"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{8FB9163E-5FAB-E232-3A9F-14340F0B046C}"
+  "FileHash": "{A20AB2A4-AE2E-B209-6170-9757EAB27500}"
  }
 }
