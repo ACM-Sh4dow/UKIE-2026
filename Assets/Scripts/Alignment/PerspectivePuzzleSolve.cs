@@ -32,6 +32,7 @@ public class PerspectivePuzzleSolve : MonoBehaviour
             // puzzleResult.SetActive(true);
             
             isPuzzleSolved = true;
+            AkUnitySoundEngine.PostEvent("Take_Photo", gameObject);
             Debug.Log("Solved");
         }
     }

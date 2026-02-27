@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{75CAA259-F76F-5708-E271-D24478966A63}",
+    "Hash": "{29230103-F985-8A70-EFF2-1AEE29FA65D8}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -87,9 +87,49 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistanceFromTarget",
       "GUID": "{858411FD-A51F-4EDF-8B88-11B44051CFBD}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "2279743627",
+      "Name": "Game_Progress",
+      "ObjectPath": "\\States\\Default Work Unit\\Game_Progress",
+      "GUID": "{8A2EACCF-3979-4246-998D-C128C20C35F9}",
+      "States": [
+       {
+        "Id": "678209053",
+        "Name": "Two",
+        "ObjectPath": "\\States\\Default Work Unit\\Game_Progress\\Two",
+        "GUID": "{747613D2-A11D-4E3C-9809-114FF255E411}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Game_Progress\\None",
+        "GUID": "{B96244F1-470C-4258-8C88-0880758987FC}"
+       },
+       {
+        "Id": "766521211",
+        "Name": "Zero",
+        "ObjectPath": "\\States\\Default Work Unit\\Game_Progress\\Zero",
+        "GUID": "{F340EEE0-BC30-4C83-8459-1AFB41BAF44C}"
+       },
+       {
+        "Id": "912956111",
+        "Name": "Three",
+        "ObjectPath": "\\States\\Default Work Unit\\Game_Progress\\Three",
+        "GUID": "{89DAF264-18AC-4564-B75C-F4E436428BF1}"
+       },
+       {
+        "Id": "1064933119",
+        "Name": "One",
+        "ObjectPath": "\\States\\Default Work Unit\\Game_Progress\\One",
+        "GUID": "{229F6D52-EC69-46A1-B4F1-0C1A3C60DF7C}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{F327E787-BDE5-9C88-B617-17A07F130781}"
+  "FileHash": "{F1BBF6D6-1081-1289-7F89-F464BA434D7C}"
  }
 }
