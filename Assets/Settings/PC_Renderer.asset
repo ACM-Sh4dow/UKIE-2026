@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478d868eff89da44b9ac2ab744ff1540, type: 3}
   m_Name: Pixelate
   m_EditorClassIdentifier: Assembly-CSharp::Pixelate
-  m_Active: 0
+  m_Active: 1
   settings:
-    downsampleFactor: 3
+    downsampleFactor: 2
     colors:
     - {r: 0.039215688, g: 0.03529412, b: 0.06666667, a: 0}
     - {r: 0.32156864, g: 0.30588236, b: 0.5686275, a: 0}

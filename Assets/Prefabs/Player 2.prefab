@@ -485,7 +485,7 @@ MonoBehaviour:
   currentState: 0
   movementDir: {x: 0, y: 0, z: 0}
   movementSpeed: 6
-  slowSpeed: 0
+  slowSpeed: 2
   gravity: 20
   aimSensitivity: 20
 --- !u!1001 &3795591707136980687
