@@ -301,7 +301,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music_Title_01" ID="{C5A3B32C-AC7E-4082-986A-39E4219AA7FA}">
+				<Event Name="Music_Title_Stop" ID="{C5A3B32C-AC7E-4082-986A-39E4219AA7FA}">
 					<ChildrenList>
 						<Action Name="" ID="{3A65D0F5-303A-4536-ACF9-65E4C37C044D}" ShortID="793822046">
 							<PropertyList>
