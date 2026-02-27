@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51711815d1ccd424e9d9afd7750f5431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProtagonistController
-  stepHeight: 0.95
+  stepHeight: 1
   camera: {fileID: 8201619022079313627}
   activeCameraIndicator: {fileID: 6869535451118174311}
   walkingStarted: 0
