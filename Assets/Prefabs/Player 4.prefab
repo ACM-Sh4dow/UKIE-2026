@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4454562359251844526}
   - component: {fileID: 485783604678036909}
   - component: {fileID: 3631290928013933533}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 4685450147629096727}
   - component: {fileID: 3157204321549062454}
   - component: {fileID: 2645201996021630421}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 3104317637716539776}
   - component: {fileID: 2785988496418904605}
   - component: {fileID: 6396764653124252654}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,6 +405,7 @@ MonoBehaviour:
   walkingStarted: 0
   walkingFinished: 0
   SecondsBetweenFootsteps: 0.83
+  perspectivePuzzle: {fileID: 0}
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0, w: 0}
   currentState: 0
@@ -423,7 +424,7 @@ GameObject:
   - component: {fileID: 3621963460659601315}
   - component: {fileID: 5201854995313027501}
   - component: {fileID: 7796296644054268447}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: activeCameraIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

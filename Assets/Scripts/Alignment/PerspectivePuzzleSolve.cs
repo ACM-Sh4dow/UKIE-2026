@@ -13,7 +13,7 @@ public class PerspectivePuzzleSolve : MonoBehaviour
     
     [Header("Puzzle Pieces")]
     [SerializeField] private GameObject puzzleSolution;
-    [SerializeField] private GameObject puzzleResult;
+    // [SerializeField] private GameObject puzzleResult;
     
     private bool isPuzzleSolved;
 
@@ -29,9 +29,10 @@ public class PerspectivePuzzleSolve : MonoBehaviour
             && Quaternion.Dot(solvingPlayer.playerRotation.normalized, puzzleSolution.transform.rotation.normalized) <=
             angleTolerance)
         {
-            puzzleResult.SetActive(true);
+            // puzzleResult.SetActive(true);
             
             isPuzzleSolved = true;
+            Debug.Log("Solved");
         }
     }
     #endregion

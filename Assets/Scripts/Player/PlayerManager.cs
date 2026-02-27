@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
     public Vector3[] spawnPositions;
+    public Quaternion[] spawnRotations;
     public GameObject[] playerPrefabs;
     public static List<ProtagonistController> players = new List<ProtagonistController>();
 
@@ -16,7 +17,7 @@ public class PlayerManager : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            var spawned = Instantiate(playerPrefabs[i], spawnPositions[i], Quaternion.identity, this.transform);
+            var spawned = Instantiate(playerPrefabs[i], spawnPositions[i], spawnRotations[i], this.transform);
             spawned.name = spawned.name.Substring(0, 8);
             players.Add(spawned.GetComponent<ProtagonistController>());
         }
