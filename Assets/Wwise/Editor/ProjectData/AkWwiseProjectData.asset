@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 4dcd19903c2f8049b012156084a45f3f
     GuidInternal: 
-    m_lastTime: -8584294651565411478
+    m_lastTime: -8584294190988440238
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5cfb63d19daf845b0413e6022b25083
     GuidInternal: 
-    m_lastTime: -8584294651565584181
+    m_lastTime: -8584294190988578368
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,9 +54,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: Reverb
-      guid: 2d8c4395d958ad44b247a9ea93b9365a
-      id: 348963605
+    - name: Reverb_Music
+      guid: 8e6ee035bd42eb4898e1b6ed8077ac98
+      id: 301991745
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -67,10 +67,27 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Reverb
+      - ElementName: Reverb_Music
+        ObjectType: 1
+        guid: 8e6ee035bd42eb4898e1b6ed8077ac98
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Music
+    - name: Reverb_SFX
+      guid: 2d8c4395d958ad44b247a9ea93b9365a
+      id: 3434922741
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c5cfb63d19daf845b0413e6022b25083
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb_SFX
         ObjectType: 1
         guid: 2d8c4395d958ad44b247a9ea93b9365a
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -83,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b8952b5446dc0a45aa17981662e44dc5
     GuidInternal: 
-    m_lastTime: -8584294651565460671
+    m_lastTime: -8584294190988479315
     List: []
   - PhysicalPath: SoundBanks\Soundbanks WU.wwu
     PathAndIcons:
@@ -96,7 +113,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks WU
     guid: 0e1ce72fe564f84abf440246125e9b2f
     GuidInternal: 
-    m_lastTime: -8584294651565450675
+    m_lastTime: -8584294190988479315
     List:
     - name: Main
       guid: a1294a370e2c8747b0c7557dbcdfb016
@@ -124,7 +141,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8f1f2d81bf10524c87969d208461c1b5
     GuidInternal: 
-    m_lastTime: -8584294651565741344
+    m_lastTime: -8584294190988649045
     List:
     - name: Movement_Start
       guid: 399e6eb37005d743bec05f9fd272dace
@@ -157,6 +174,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7456a965f2cd8d45a68458b514ad4ed4
       Path: Events\Default Work Unit\Movement_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: fe8cdd597010ee47a2b00aa72e921f6d
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music
+        ObjectType: 3
+        guid: fe8cdd597010ee47a2b00aa72e921f6d
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Piano
+      guid: f737688a38787342a86023392745559d
+      id: 5741148
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music_Piano
+        ObjectType: 3
+        guid: f737688a38787342a86023392745559d
+      Path: Events\Default Work Unit\Music_Piano
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -206,8 +257,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6d425bf59b107a4280552a1dfe2d0d80
     GuidInternal: 
-    m_lastTime: -8584294651565731351
-    List: []
+    m_lastTime: -8584294190988649045
+    List:
+    - name: DistanceFromTarget
+      guid: fd1184851fa5df4e8b8811b44051cfbd
+      id: 1768319275
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6d425bf59b107a4280552a1dfe2d0d80
+      - ElementName: DistanceFromTarget
+        ObjectType: 13
+        guid: fd1184851fa5df4e8b8811b44051cfbd
+      Path: Game Parameters\Default Work Unit\DistanceFromTarget
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -220,7 +285,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 042d04aa3c0af846b3c356a37b59a05a
     GuidInternal: 
-    m_lastTime: -8584294651565440670
+    m_lastTime: -8584294190988466133
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -234,7 +299,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e50c630abc570542a558c001d19a807d
     GuidInternal: 
-    m_lastTime: -8584294651565426420
+    m_lastTime: -8584294190988460939
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -248,7 +313,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 022d1d461de465458197551c0f986d04
     GuidInternal: 
-    m_lastTime: -8584294651565413710
+    m_lastTime: -8584294190988455761
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

@@ -17,7 +17,7 @@ public class ProtagonistController : MonoBehaviour
     public Coroutine SoundCoroutine;
     public float SecondsBetweenFootsteps;
 
-    // public PerspectivePuzzleSolve perspectivePuzzle;
+    public PerspectivePuzzleSolve perspectivePuzzle;
 
     public Vector3 playerPosition;
     public Quaternion playerRotation;
@@ -240,13 +240,13 @@ public class ProtagonistController : MonoBehaviour
     #endregion
     #region Perspective Puzzle
 
-    //public void GivePuzzle(PerspectivePuzzleSolve puzzle)
-    //{
-    //    if (!perspectivePuzzle)
-    //    {
-    //        perspectivePuzzle = puzzle;
-    //    }
-    //}
+    public void GivePuzzle(PerspectivePuzzleSolve puzzle)
+    {
+        if (!perspectivePuzzle)
+        {
+            perspectivePuzzle = puzzle;
+        }
+    }
 
     #endregion
 
