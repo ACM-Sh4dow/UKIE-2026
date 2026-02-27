@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b09e275f3a43274f9ab37a325912cb6, type: 3}
+  m_Name: 472F695C-3AAF-4E97-8FBA-E0DDF9C65C2E
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Music_Target_3
+  id: 958957468
+  guid: 472F695C-3AAF-4E97-8FBA-E0DDF9C65C2E
+  IsInUserDefinedSoundBank: 1

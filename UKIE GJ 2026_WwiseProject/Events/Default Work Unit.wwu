@@ -159,7 +159,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music_Piano" ID="{8A6837F7-7838-4273-A860-23392745559D}">
+				<Event Name="Music_Target_1" ID="{8A6837F7-7838-4273-A860-23392745559D}">
 					<ChildrenList>
 						<Action Name="" ID="{B9EBD578-CBB5-49E4-8E42-377A1D022213}" ShortID="710994793">
 							<PropertyList>
@@ -173,6 +173,72 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{9D0FB3F7-8D75-4669-A488-654CB59F783C}" ShortID="997628030">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Target_2" ID="{359B61E4-7A0C-43FB-BCBF-F7D076025317}">
+					<ChildrenList>
+						<Action Name="" ID="{F276D2F7-08BC-4CD6-9258-7C3F54034F09}" ShortID="1490131">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D1C23FC1-06ED-4B54-B0D0-9570AE569FDE}" ShortID="2560870">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Target_3" ID="{472F695C-3AAF-4E97-8FBA-E0DDF9C65C2E}">
+					<ChildrenList>
+						<Action Name="" ID="{C3E89ECA-8629-467A-8B65-16D4C5FFA241}" ShortID="401837600">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F5340846-24F0-4A78-9448-A76A90F6E5EC}" ShortID="664812527">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Target_4" ID="{2C941C7E-79FB-42F8-AFD8-513E89CE3AE5}">
+					<ChildrenList>
+						<Action Name="" ID="{A9802BE2-69D0-4933-B34E-B6788ECA4755}" ShortID="765849570">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0616100C-ED9F-444D-958A-3576305DEA72}" ShortID="69657386">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>

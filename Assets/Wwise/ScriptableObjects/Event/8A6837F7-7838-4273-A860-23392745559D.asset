@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b09e275f3a43274f9ab37a325912cb6, type: 3}
   m_Name: 8A6837F7-7838-4273-A860-23392745559D
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
-  objectName: Music_Piano
-  id: 5741148
+  objectName: Music_Target_1
+  id: 958957470
   guid: 8A6837F7-7838-4273-A860-23392745559D
   IsInUserDefinedSoundBank: 1
