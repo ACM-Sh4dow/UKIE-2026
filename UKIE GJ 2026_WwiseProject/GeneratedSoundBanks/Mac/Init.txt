@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2279743627	Game_Progress			\Default Work Unit\Game_Progress	
+
+State	ID	Name	State Group			Notes
+	678209053	Two	Game_Progress			
+	748895195	None	Game_Progress			
+	766521211	Zero	Game_Progress			
+	912956111	Three	Game_Progress			
+	1064933119	One	Game_Progress			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

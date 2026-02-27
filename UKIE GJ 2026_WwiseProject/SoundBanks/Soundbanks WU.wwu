@@ -13,6 +13,7 @@
 						<ObjectRef Name="Music" ID="{59DD8CFE-1070-47EE-A2B0-0AA72E921F6D}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Take_Photo" ID="{5EB708FB-A900-4B6B-9010-A92F713DB3A9}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Camera" ID="{85F7A17D-3298-4C18-8A83-F60CFB087AA4}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Title" ID="{0F29EC34-C74F-4D79-89C1-EAFE19F62AF4}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Target_3" ID="{472F695C-3AAF-4E97-8FBA-E0DDF9C65C2E}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

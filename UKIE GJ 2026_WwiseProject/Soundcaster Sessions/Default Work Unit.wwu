@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MusicTest" ID="{9AF0BF43-EAAA-4437-AD3A-A49449F56100}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Movement_Start" ID="{B36E9E39-0570-43D7-BEC0-5F9FD272DACE}" WorkUnitID="{812D1F8F-10BF-4C52-8796-9D208461C1B5}"/>
 							<Position X="1" Y="0"/>
 						</Module>
