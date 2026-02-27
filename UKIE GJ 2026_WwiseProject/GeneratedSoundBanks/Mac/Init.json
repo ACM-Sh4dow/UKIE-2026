@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{A00EFD0D-C5B9-1F5C-3D5B-BDDE82F130CA}",
+    "Hash": "{75CAA259-F76F-5708-E271-D24478966A63}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -54,9 +54,22 @@
     ],
     "AuxBusses": [
      {
-      "Id": "348963605",
-      "Name": "Reverb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+      "Id": "301991745",
+      "Name": "Reverb_Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb_Music",
+      "GUID": "{35E06E8E-42BD-48EB-98E1-B6ED8077AC98}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2513915904"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3434922741",
+      "Name": "Reverb_SFX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb_SFX",
       "GUID": "{95438C2D-58D9-44AD-B247-A9EA93B9365A}",
       "PluginRefs": {
        "ShareSets": [
@@ -66,9 +79,17 @@
        ]
       }
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1768319275",
+      "Name": "DistanceFromTarget",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistanceFromTarget",
+      "GUID": "{858411FD-A51F-4EDF-8B88-11B44051CFBD}"
+     }
     ]
    }
   ],
-  "FileHash": "{31428E1E-D4C5-F197-7C3F-06FB0E09EB41}"
+  "FileHash": "{F327E787-BDE5-9C88-B617-17A07F130781}"
  }
 }

@@ -53,7 +53,7 @@ public class PlayerManager : MonoBehaviour
 
         if (player != currentPlayer)
         {
-            // CAMERA SWITCH SFX HERE
+            AkUnitySoundEngine.PostEvent("Switch_Camera", player.gameObject);
         }
     }
 

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{ECA83D23-8428-4808-ADE9-0132CC8565BA}" SchemaVersion="123">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{ECA83D23-8428-4808-ADE9-0132CC8565BA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{ECA83D23-8428-4808-ADE9-0132CC8565BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Engine Decay" ID="{C27DD36D-633D-4035-B232-DCE3859462AF}" ShortID="1046524214">
+					<PropertyList>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="5"/>
+					</PropertyList>
+				</ModulatorEnvelope>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

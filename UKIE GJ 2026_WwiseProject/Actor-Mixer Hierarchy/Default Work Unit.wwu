@@ -12,7 +12,7 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb" ID="{95438C2D-58D9-44AD-B247-A9EA93B9365A}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+							<ObjectRef Name="Reverb_SFX" ID="{95438C2D-58D9-44AD-B247-A9EA93B9365A}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -33,7 +33,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -147,6 +147,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -190,9 +191,10 @@
 						<Sound Name="Movement" ID="{FC6CC7C4-B2D9-4460-B13E-2A911F6D47DE}" ShortID="228017126">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -211,7 +213,7 @@
 										<Property Name="FadeInDuration" Type="Real64" Value="0.342857142857143"/>
 										<Property Name="FadeInShape" Type="int16" Value="8"/>
 										<Property Name="LoopBegin" Type="Real64" Value="1.03809523809524"/>
-										<Property Name="LoopEnd" Type="Real64" Value="6.94285714285714"/>
+										<Property Name="LoopEnd" Type="Real64" Value="5.94134740730743"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -249,12 +251,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>21</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>1</XPos>
-																		<YPos>-5.07985</YPos>
+																		<YPos>-2.23475</YPos>
 																		<Flags>53</Flags>
 																	</Point>
 																</PointList>
@@ -269,6 +271,210 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Movement" ID="{F47537DF-41EE-4B4B-A581-BDB5441B1742}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Movement_Humming" ID="{1936A77C-FADF-4D66-B38A-77546F131762}" ShortID="63122949">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Movement_Humming" ID="{AD3DB773-D7EE-41F0-9EA2-E43A0CA3A257}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="480.426"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.24294511822687"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.39356708789499"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Movement_Humming.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="927384653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D2998467-83D6-451F-90B5-1D50DFB52406}" ShortID="890413824">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Engine Decay" ID="{C27DD36D-633D-4035-B232-DCE3859462AF}" WorkUnitID="{ECA83D23-8428-4808-ADE9-0132CC8565BA}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BD51B973-E95F-4046-9789-49C0DC28C835}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Movement_Humming" ID="{AD3DB773-D7EE-41F0-9EA2-E43A0CA3A257}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Movement_Propeller" ID="{5A7EB3E7-7F0A-46B9-8DA8-312610B50092}" ShortID="681786182">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Movement_Propeller" ID="{AA0173E2-FE1C-4FF3-82F5-1D1658B8CA02}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="584.866"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.59911743108777"/>
+										<Property Name="FadeInShape" Type="int16" Value="8"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.07304614523183"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.14318965400757"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Movement_Propeller.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="569779431"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CFE480A3-31C8-4BAA-AD4B-CFAB3D047A7B}" ShortID="32918285">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Engine Decay" ID="{C27DD36D-633D-4035-B232-DCE3859462AF}" WorkUnitID="{ECA83D23-8428-4808-ADE9-0132CC8565BA}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B0C05FA6-376A-4309-B7E9-49F48DBBC4E2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Movement_Propeller" ID="{AA0173E2-FE1C-4FF3-82F5-1D1658B8CA02}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Movement_Whoosh" ID="{AA22D4C2-9CEE-4D6F-A31D-112855BDA035}" ShortID="360182800">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6C4465B5-2C94-463E-9064-E50D2259D599}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FA22367-F466-4728-B893-2886F2C933E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DB6CFC5-DA19-45F8-B041-3E6022B25083}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Movement_Whoosh" ID="{D619AED1-9EB6-4083-BAE8-B5000759E406}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="417.761"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.661711789559627"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.46510349757711"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Movement_Whoosh.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="788774091"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Movement_Whoosh" ID="{D619AED1-9EB6-4083-BAE8-B5000759E406}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

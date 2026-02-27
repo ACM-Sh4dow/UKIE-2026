@@ -10,11 +10,35 @@
     "Type": "User",
     "GUID": "{374A29A1-2C0E-4787-B0C7-557DBCDFB016}",
     "Language": "SFX",
-    "Hash": "{A298F7FD-E68C-9D00-5164-06A4EB8E8F7C}",
+    "Hash": "{533C59A8-4A6D-2959-3F97-01C87CC1D83E}",
     "ObjectPath": "\\SoundBanks\\Soundbanks WU\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "7662209",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "idk but sick.wav",
+      "CachePath": "76/{7643A251-2A6F-24EC-059D-924C6ED5A230}.wem"
+     },
+     {
+      "Id": "162861007",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Pattern 2.wav",
+      "CachePath": "39/{391E1C78-8078-3B3C-792B-C42DCB2D91DB}.wem"
+     },
+     {
+      "Id": "243768307",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Piano.wav",
+      "CachePath": "31/{3119A67A-EDE9-E6DF-6D2D-BDD784BE26D6}.wem"
+     },
      {
       "Id": "348632390",
       "Language": "SFX",
@@ -32,12 +56,44 @@
       "CachePath": "C3/{C345BE8C-27A3-0D7A-48AF-B12FC59BC366}.wem"
      },
      {
-      "Id": "880057183",
+      "Id": "509111536",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Movement.wav",
-      "CachePath": "57/{575DC006-156F-333D-5E12-4C5C1A5FB01C}.wem"
+      "ShortName": "Chord Root.wav",
+      "CachePath": "AC/{ACCE4662-5283-134D-D345-DF7674DC4478}.wem"
+     },
+     {
+      "Id": "569779431",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Movement_Propeller.wav",
+      "CachePath": "38/{385CD810-0BD5-71D6-53A1-578EDF72ADCA}.wem"
+     },
+     {
+      "Id": "611321162",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bassy Bass.wav",
+      "CachePath": "E3/{E3B9422D-07F9-FBB2-C453-31720E311AF9}.wem"
+     },
+     {
+      "Id": "788774091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Movement_Whoosh.wav",
+      "CachePath": "82/{828F343B-D749-2B22-4568-69AC1DDB0715}.wem"
+     },
+     {
+      "Id": "927384653",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Movement_Humming.wav",
+      "CachePath": "42/{42A08549-9B7A-482C-564A-57F62735D4A3}.wem"
      },
      {
       "Id": "986840028",
@@ -65,15 +121,13 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "880057183"
-       }
-      ],
-      "AuxBusRefs": [
+        "Id": "569779431"
+       },
        {
-        "Id": "348963605",
-        "Name": "Reverb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
-        "GUID": "{95438C2D-58D9-44AD-B247-A9EA93B9365A}"
+        "Id": "788774091"
+       },
+       {
+        "Id": "927384653"
        }
       ]
      },
@@ -86,6 +140,49 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{59DD8CFE-1070-47EE-A2B0-0AA72E921F6D}",
+      "MaxAttenuation": "55",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "7662209"
+       },
+       {
+        "Id": "162861007"
+       },
+       {
+        "Id": "509111536"
+       },
+       {
+        "Id": "611321162"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "301991745",
+        "Name": "Reverb_Music",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb_Music",
+        "GUID": "{35E06E8E-42BD-48EB-98E1-B6ED8077AC98}"
+       }
+      ]
+     },
+     {
+      "Id": "5741148",
+      "Name": "Music_Piano",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_Piano",
+      "GUID": "{8A6837F7-7838-4273-A860-23392745559D}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "243768307"
+       }
+      ]
      },
      {
       "Id": "203077237",
@@ -122,9 +219,9 @@
       ],
       "AuxBusRefs": [
        {
-        "Id": "348963605",
-        "Name": "Reverb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "Id": "3434922741",
+        "Name": "Reverb_SFX",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb_SFX",
         "GUID": "{95438C2D-58D9-44AD-B247-A9EA93B9365A}"
        }
       ]
@@ -132,6 +229,6 @@
     ]
    }
   ],
-  "FileHash": "{A20AB2A4-AE2E-B209-6170-9757EAB27500}"
+  "FileHash": "{B0F1AEBF-7433-6CA8-4456-DA4ED267646D}"
  }
 }

@@ -10,12 +10,29 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="Reverb" ID="{95438C2D-58D9-44AD-B247-A9EA93B9365A}">
+						<AuxBus Name="Reverb_SFX" ID="{95438C2D-58D9-44AD-B247-A9EA93B9365A}">
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
 											<EffectSlot Name="" ID="{7C841FFE-B454-46B8-AECC-9807FB394EBF}" ShortID="950634247">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Reverb_Music" ID="{35E06E8E-42BD-48EB-98E1-B6ED8077AC98}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{04A702C9-7E53-4195-843F-57D4764E6C7A}" ShortID="604541778">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 														<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>

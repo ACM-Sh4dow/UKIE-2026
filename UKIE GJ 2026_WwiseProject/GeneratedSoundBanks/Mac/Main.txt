@@ -1,16 +1,25 @@
 Event	ID	Name			Wwise Object Path	Notes
+	5741148	Music_Piano			\Default Work Unit\Music_Piano	
 	203077237	Switch_Camera			\Default Work Unit\Switch_Camera	
 	308747891	Movement_Start			\Default Work Unit\Movement_Start	
 	1303188401	Movement_Stop			\Default Work Unit\Movement_Stop	
+	3991942870	Music			\Default Work Unit\Music	
 	4088074013	Take_Photo			\Default Work Unit\Take_Photo	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
-	53458773	Modulator Envelope (Custom)				
+	1046524214	Engine Decay			\Default Work Unit\Engine Decay	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7662209	idk but sick	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\76\{7643A251-2A6F-24EC-059D-924C6ED5A230}.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Placeholder Segment\idk but sick		2971516
+	162861007	Pattern 2	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\39\{391E1C78-8078-3B3C-792B-C42DCB2D91DB}.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Placeholder Segment\Pattern 2		2075176
+	243768307	Piano	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\31\{3119A67A-EDE9-E6DF-6D2D-BDD784BE26D6}.wem		\Interactive Music Hierarchy\Default Work Unit\Piano Playlist\Piano Segment\Piano		4368912
 	348632390	Camera_02	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\4B\{4B8CB8AB-5AC3-E295-84BA-7B6963F1EED0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Photo\Camera_02		130548
 	436068188	Camera_Switch	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\C3\{C345BE8C-27A3-0D7A-48AF-B12FC59BC366}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Camera_Switch		40856
-	880057183	Movement	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\57\{575DC006-156F-333D-5E12-4C5C1A5FB01C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement		1411344
+	509111536	Chord Root	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\AC\{ACCE4662-5283-134D-D345-DF7674DC4478}.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Placeholder Segment\Chord Root		2075176
+	569779431	Movement_Propeller	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\38\{385CD810-0BD5-71D6-53A1-578EDF72ADCA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement_Propeller		1415052
+	611321162	Bassy Bass	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\E3\{E3B9422D-07F9-FBB2-C453-31720E311AF9}.wem		\Interactive Music Hierarchy\Default Work Unit\Music Playlist\Placeholder Segment\Bassy Bass		6872396
+	788774091	Movement_Whoosh	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\82\{828F343B-D749-2B22-4568-69AC1DDB0715}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement_Whoosh		1415052
+	927384653	Movement_Humming	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\42\{42A08549-9B7A-482C-564A-57F62735D4A3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement_Humming		1415052
 	986840028	Camera_01	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\7B\{7B4FF63A-0B26-0B90-4AF3-0F3BE13C8B15}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Photo\Camera_01		129956
 	1013596613	Camera_03	C:\Work\UKIE Game Jam 2026\PROJECT\UKIE-2026\UKIE GJ 2026_WwiseProject\.cache\F6\{F65C7402-49DA-B836-C813-B074A3C2D1B9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Photo\Camera_03		159460
 

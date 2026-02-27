@@ -5,10 +5,66 @@
 			<ChildrenList>
 				<Event Name="Movement_Start" ID="{B36E9E39-0570-43D7-BEC0-5F9FD272DACE}">
 					<ChildrenList>
-						<Action Name="" ID="{15A1A92C-A846-4B9A-AAA0-F63922558495}" ShortID="905414302">
+						<Action Name="" ID="{82E322A7-8C4C-4262-8875-15B7906591A2}" ShortID="378230643">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Movement" ID="{FC6CC7C4-B2D9-4460-B13E-2A911F6D47DE}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+									<ObjectRef Name="Movement_Humming" ID="{1936A77C-FADF-4D66-B38A-77546F131762}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{114DF32C-FA9F-4CCE-9ADD-915973B5E196}" ShortID="120939575">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Propeller" ID="{5A7EB3E7-7F0A-46B9-8DA8-312610B50092}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C5DB2F81-759F-4289-A218-5122B549C4C7}" ShortID="117330040">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Whoosh" ID="{AA22D4C2-9CEE-4D6F-A31D-112855BDA035}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{568E90F2-CA32-48B1-9135-6141A8E6064C}" ShortID="441801324">
+							<PropertyList>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Humming" ID="{1936A77C-FADF-4D66-B38A-77546F131762}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7605E807-8D78-48F0-A0F1-2AF398FB7879}" ShortID="1022271023">
+							<PropertyList>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Propeller" ID="{5A7EB3E7-7F0A-46B9-8DA8-312610B50092}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{78C7C3BD-8980-4F3F-9857-B720CB772596}" ShortID="451721262">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Whoosh" ID="{AA22D4C2-9CEE-4D6F-A31D-112855BDA035}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -16,15 +72,41 @@
 				</Event>
 				<Event Name="Movement_Stop" ID="{65A95674-CDF2-458D-A684-58B514AD4ED4}">
 					<ChildrenList>
-						<Action Name="" ID="{336432D3-42E8-4E5E-BD15-8C8406BB3CBE}" ShortID="536660999">
+						<Action Name="" ID="{70D593D3-E667-4B93-9F54-2CE33D43EAAC}" ShortID="115807434">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
 								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Movement" ID="{FC6CC7C4-B2D9-4460-B13E-2A911F6D47DE}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+									<ObjectRef Name="Movement_Humming" ID="{1936A77C-FADF-4D66-B38A-77546F131762}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0599919A-893C-45FD-A461-2D3E27F730CD}" ShortID="495756772">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Propeller" ID="{5A7EB3E7-7F0A-46B9-8DA8-312610B50092}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B0564A84-4BE6-47CA-937E-E5E86043051D}" ShortID="489229736">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Whoosh" ID="{AA22D4C2-9CEE-4D6F-A31D-112855BDA035}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -47,6 +129,53 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Camera_Switch" ID="{469DC531-E5AB-46F1-A971-54FF662F88B9}" WorkUnitID="{1BD7F839-CDA8-4B2B-B8E9-29C70F2034E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music" ID="{59DD8CFE-1070-47EE-A2B0-0AA72E921F6D}">
+					<ChildrenList>
+						<Action Name="" ID="{F4DDD10D-204B-4CDC-9007-1E162B2BB950}" ShortID="341347090">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Playlist" ID="{665A7DA1-E9D6-4D34-80B2-A5F24CEE1E25}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EC30A546-33E7-44C3-B9FB-BE4155B0C73E}" ShortID="663659110">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Playlist" ID="{665A7DA1-E9D6-4D34-80B2-A5F24CEE1E25}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Piano" ID="{8A6837F7-7838-4273-A860-23392745559D}">
+					<ChildrenList>
+						<Action Name="" ID="{B9EBD578-CBB5-49E4-8E42-377A1D022213}" ShortID="710994793">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9D0FB3F7-8D75-4669-A488-654CB59F783C}" ShortID="997628030">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piano Playlist" ID="{CABD89A2-7A05-4D02-9F00-EE43783ABD85}" WorkUnitID="{C6980CC0-C7E6-47B9-A77F-839950F49290}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
