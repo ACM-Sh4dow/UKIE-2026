@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,14 +21,8 @@ public class InputHandler : MonoBehaviour
         PlayerManager.SyncCameraMove(input.ReadValue<Vector2>());
     }
 
-    //public void RecieveInteractInput(InputAction.CallbackContext input)
-    //{
-    //    if (!input.started) return;
-
-    //    ProtagonistController.Interact();
-    //    if (ProtagonistController.Instance.perspectivePuzzle != null)
-    //    {
-    //        ProtagonistController.Instance.perspectivePuzzle.SolvePuzzle();
-    //    }
-    //}
+    public void RecieveSlowInput(InputAction.CallbackContext input)
+    {
+        ProtagonistController.Slow(input);
+    }
 }

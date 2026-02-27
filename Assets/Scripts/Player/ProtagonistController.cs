@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class ProtagonistController : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class ProtagonistController : MonoBehaviour
     private static Vector2 movementInput;
 
     [SerializeField] float movementSpeed;
+    [SerializeField] float slowSpeed;
+    private static bool slowed = false;
     [SerializeField] float gravity = 20f;
     private const float MaxSlopeAngle = 55f;
     private const int MaxDepth = 3;
@@ -156,6 +159,21 @@ public class ProtagonistController : MonoBehaviour
 
         position.y += stepUp + FloatingPointErrorCheck;
         return true;
+    }
+
+    #endregion
+    #region Slow
+
+    public static void Slow(InputAction.CallbackContext context)
+    {
+        if (!context.canceled)
+        {
+            slowed = true;
+        }
+        else
+        {
+            slowed = false;
+        }
     }
 
     #endregion
@@ -348,7 +366,15 @@ public class ProtagonistController : MonoBehaviour
         Vector3 newMovementInput = new Vector3(movementInput.x, 0, movementInput.y);
         Vector3 moveDirection = Quaternion.Euler(0, camera.transform.eulerAngles.y, 0) * newMovementInput;
 
-        velocity = moveDirection * movementSpeed;
+        if (slowed)
+        {
+            velocity = moveDirection * slowSpeed;
+        }
+        else
+        {
+            velocity = moveDirection * movementSpeed;
+        }
+        
         Vector3 intendedVelocity = velocity * Time.deltaTime;
 
         // Attempt step-up before resolving collisions
