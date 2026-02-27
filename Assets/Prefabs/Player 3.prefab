@@ -138,7 +138,7 @@ MonoBehaviour:
   playerRotation: {x: 0, y: 0, z: 0, w: 0}
   currentState: 0
   movementDir: {x: 0, y: 0, z: 0}
-  movementSpeed: 3
+  movementSpeed: 6
   gravity: 20
   aimSensitivity: 20
 --- !u!1 &654991574801659765
