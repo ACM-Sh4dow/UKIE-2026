@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5cfb63d19daf845b0413e6022b25083
     GuidInternal: 
-    m_lastTime: -8584294201401860423
+    m_lastTime: -8584294181632037920
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -113,7 +113,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks WU
     guid: 0e1ce72fe564f84abf440246125e9b2f
     GuidInternal: 
-    m_lastTime: -8584294153891210728
+    m_lastTime: -8584294151303162664
     List:
     - name: Main
       guid: a1294a370e2c8747b0c7557dbcdfb016
@@ -141,7 +141,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8f1f2d81bf10524c87969d208461c1b5
     GuidInternal: 
-    m_lastTime: -8584294153993728651
+    m_lastTime: -8584294151306098499
     List:
     - name: Movement_Start
       guid: 399e6eb37005d743bec05f9fd272dace
@@ -158,8 +158,8 @@ MonoBehaviour:
         guid: 399e6eb37005d743bec05f9fd272dace
       Path: Events\Default Work Unit\Movement_Start
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Movement_Stop
       guid: 7456a965f2cd8d45a68458b514ad4ed4
       id: 1303188401
@@ -175,8 +175,8 @@ MonoBehaviour:
         guid: 7456a965f2cd8d45a68458b514ad4ed4
       Path: Events\Default Work Unit\Movement_Stop
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: fe8cdd597010ee47a2b00aa72e921f6d
       id: 3991942870
@@ -191,9 +191,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: fe8cdd597010ee47a2b00aa72e921f6d
       Path: Events\Default Work Unit\Music
-      maxAttenuation: 55
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_Target_1
       guid: f737688a38787342a86023392745559d
       id: 958957470
@@ -208,9 +208,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f737688a38787342a86023392745559d
       Path: Events\Default Work Unit\Music_Target_1
-      maxAttenuation: 15
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_Target_2
       guid: e4619b350c7afb43bcbff7d076025317
       id: 958957469
@@ -225,9 +225,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: e4619b350c7afb43bcbff7d076025317
       Path: Events\Default Work Unit\Music_Target_2
-      maxAttenuation: 15
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_Target_3
       guid: 5c692f47af3a974e8fbae0ddf9c65c2e
       id: 958957468
@@ -242,9 +242,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5c692f47af3a974e8fbae0ddf9c65c2e
       Path: Events\Default Work Unit\Music_Target_3
-      maxAttenuation: 15
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_Target_4
       guid: 7e1c942cfb79f842afd8513e89ce3ae5
       id: 958957467
@@ -259,9 +259,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7e1c942cfb79f842afd8513e89ce3ae5
       Path: Events\Default Work Unit\Music_Target_4
-      maxAttenuation: 15
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Switch_Camera
       guid: 7da1f7859832184c8a83f60cfb087aa4
       id: 203077237
@@ -277,8 +277,8 @@ MonoBehaviour:
         guid: 7da1f7859832184c8a83f60cfb087aa4
       Path: Events\Default Work Unit\Switch_Camera
       maxAttenuation: 0
-      maxDuration: 0.23442669
-      minDuration: 0.23106577
+      maxDuration: -1
+      minDuration: -1
     - name: Take_Photo
       guid: fb08b75e00a96b4b9010a92f713db3a9
       id: 4088074013
@@ -294,8 +294,8 @@ MonoBehaviour:
         guid: fb08b75e00a96b4b9010a92f713db3a9
       Path: Events\Default Work Unit\Take_Photo
       maxAttenuation: 0
-      maxDuration: 0.98520225
-      minDuration: 0.7152001
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -308,7 +308,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6d425bf59b107a4280552a1dfe2d0d80
     GuidInternal: 
-    m_lastTime: -8584294201404355546
+    m_lastTime: -8584294181635483495
     List:
     - name: DistanceFromTarget
       guid: fd1184851fa5df4e8b8811b44051cfbd
