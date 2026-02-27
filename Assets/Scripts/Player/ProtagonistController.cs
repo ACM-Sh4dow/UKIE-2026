@@ -166,11 +166,11 @@ public class ProtagonistController : MonoBehaviour
 
     public static void Slow(InputAction.CallbackContext context)
     {
-        if (!context.canceled)
+        if (context.started)
         {
             slowed = true;
         }
-        else
+        else if (context.canceled)
         {
             slowed = false;
         }

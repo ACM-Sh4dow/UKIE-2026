@@ -6,12 +6,12 @@ public class InputHandler : MonoBehaviour
 {
     public void ReceiveMovementInput(InputAction.CallbackContext input)
     {
-        ProtagonistController.Instance.SyncMovementInput(input);
+        ProtagonistController.Instance?.SyncMovementInput(input);
     }
 
     public void RecieveLookInput(InputAction.CallbackContext input)
     {
-        ProtagonistController.Instance.SyncLookInput(input.ReadValue<Vector2>());
+        ProtagonistController.Instance?.SyncLookInput(input.ReadValue<Vector2>());
     }
 
     public void RecieveCameraChangeInput(InputAction.CallbackContext input)
@@ -24,5 +24,12 @@ public class InputHandler : MonoBehaviour
     public void RecieveSlowInput(InputAction.CallbackContext input)
     {
         ProtagonistController.Slow(input);
+    }
+
+    public void RecieveRestartInput(InputAction.CallbackContext input)
+    {
+        if (!input.started) return;
+
+        Restart.Retry();
     }
 }
