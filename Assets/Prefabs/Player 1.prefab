@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51711815d1ccd424e9d9afd7750f5431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProtagonistController
-  stepHeight: 0.95
+  stepHeight: 1
   camera: {fileID: 5435863654272148014}
   activeCameraIndicator: {fileID: 6973211327141005306}
   walkingStarted: 0
@@ -310,6 +310,7 @@ MonoBehaviour:
   currentState: 0
   movementDir: {x: 0, y: 0, z: 0}
   movementSpeed: 6
+  slowSpeed: 0
   gravity: 20
   aimSensitivity: 20
 --- !u!1 &6880890756897100791
