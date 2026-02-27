@@ -113,7 +113,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks WU
     guid: 0e1ce72fe564f84abf440246125e9b2f
     GuidInternal: 
-    m_lastTime: -8584294050387134905
+    m_lastTime: -8584294012946196188
     List:
     - name: Main
       guid: a1294a370e2c8747b0c7557dbcdfb016
@@ -141,7 +141,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8f1f2d81bf10524c87969d208461c1b5
     GuidInternal: 
-    m_lastTime: -8584294050395382675
+    m_lastTime: -8584294012949368987
     List:
     - name: Movement_Start
       guid: 399e6eb37005d743bec05f9fd272dace
@@ -262,6 +262,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music_Title
+      guid: 34ec290f4fc7794d89c1eafe19f62af4
+      id: 3657496341
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music_Title
+        ObjectType: 3
+        guid: 34ec290f4fc7794d89c1eafe19f62af4
+      Path: Events\Default Work Unit\Music_Title
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Title_Stop
+      guid: 2cb3a3c57eac8240986a39e4219aa7fa
+      id: 3962140920
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music_Title_Stop
+        ObjectType: 3
+        guid: 2cb3a3c57eac8240986a39e4219aa7fa
+      Path: Events\Default Work Unit\Music_Title_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MusicTest
+      guid: 43bff09aaaea3744ad3aa49449f56100
+      id: 4195921398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: MusicTest
+        ObjectType: 3
+        guid: 43bff09aaaea3744ad3aa49449f56100
+      Path: Events\Default Work Unit\MusicTest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Switch_Camera
       guid: 7da1f7859832184c8a83f60cfb087aa4
       id: 203077237
@@ -336,8 +387,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 042d04aa3c0af846b3c356a37b59a05a
     GuidInternal: 
-    m_lastTime: -8584294078068898094
-    List: []
+    m_lastTime: -8584294012946185835
+    List:
+    - name: Game_Progress
+      guid: cfac2e8a79394642998dc128c20c35f9
+      id: 2279743627
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 042d04aa3c0af846b3c356a37b59a05a
+      - ElementName: Game_Progress
+        ObjectType: 9
+        guid: cfac2e8a79394642998dc128c20c35f9
+      Path: States\Default Work Unit\Game_Progress
+      values:
+      - name: None
+        guid: f14462b90c4758428c880880758987fc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 042d04aa3c0af846b3c356a37b59a05a
+        - ElementName: Game_Progress
+          ObjectType: 9
+          guid: cfac2e8a79394642998dc128c20c35f9
+        - ElementName: None
+          ObjectType: 8
+          guid: f14462b90c4758428c880880758987fc
+      - name: One
+        guid: 526d9f2269eca146b4f10c1a3c60df7c
+        id: 1064933119
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 042d04aa3c0af846b3c356a37b59a05a
+        - ElementName: Game_Progress
+          ObjectType: 9
+          guid: cfac2e8a79394642998dc128c20c35f9
+        - ElementName: One
+          ObjectType: 8
+          guid: 526d9f2269eca146b4f10c1a3c60df7c
+      - name: Three
+        guid: 64f2da89ac186445b75cf4e436428bf1
+        id: 912956111
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 042d04aa3c0af846b3c356a37b59a05a
+        - ElementName: Game_Progress
+          ObjectType: 9
+          guid: cfac2e8a79394642998dc128c20c35f9
+        - ElementName: Three
+          ObjectType: 8
+          guid: 64f2da89ac186445b75cf4e436428bf1
+      - name: Two
+        guid: d21376741da13c4e9809114ff255e411
+        id: 678209053
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 042d04aa3c0af846b3c356a37b59a05a
+        - ElementName: Game_Progress
+          ObjectType: 9
+          guid: cfac2e8a79394642998dc128c20c35f9
+        - ElementName: Two
+          ObjectType: 8
+          guid: d21376741da13c4e9809114ff255e411
+      - name: Zero
+        guid: e0ee40f330bc834c84591afb41baf44c
+        id: 766521211
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 042d04aa3c0af846b3c356a37b59a05a
+        - ElementName: Game_Progress
+          ObjectType: 9
+          guid: cfac2e8a79394642998dc128c20c35f9
+        - ElementName: Zero
+          ObjectType: 8
+          guid: e0ee40f330bc834c84591afb41baf44c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
