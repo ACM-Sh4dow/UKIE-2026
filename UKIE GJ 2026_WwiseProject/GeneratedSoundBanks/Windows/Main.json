@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{374A29A1-2C0E-4787-B0C7-557DBCDFB016}",
     "Language": "SFX",
-    "Hash": "{533C59A8-4A6D-2959-3F97-01C87CC1D83E}",
+    "Hash": "{09B2D2CE-ED7A-D815-475F-2FDFC95A488C}",
     "ObjectPath": "\\SoundBanks\\Soundbanks WU\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Movement_Propeller.wav",
-      "CachePath": "38/{385CD810-0BD5-71D6-53A1-578EDF72ADCA}.wem"
+      "CachePath": "BC/{BC3CD610-C191-FD46-3C5C-C3FF8E8C6461}.wem"
      },
      {
       "Id": "611321162",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Movement_Whoosh.wav",
-      "CachePath": "82/{828F343B-D749-2B22-4568-69AC1DDB0715}.wem"
+      "CachePath": "1F/{1F1780B5-81EB-5B39-C03D-7509921E8388}.wem"
      },
      {
       "Id": "927384653",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Movement_Humming.wav",
-      "CachePath": "42/{42A08549-9B7A-482C-564A-57F62735D4A3}.wem"
+      "CachePath": "3D/{3D12279B-EF9F-51AE-C691-603DEA31D048}.wem"
      },
      {
       "Id": "986840028",
@@ -172,10 +172,49 @@
       ]
      },
      {
-      "Id": "5741148",
-      "Name": "Music_Piano",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music_Piano",
+      "Id": "958957470",
+      "Name": "Music_Target_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_Target_1",
       "GUID": "{8A6837F7-7838-4273-A860-23392745559D}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "243768307"
+       }
+      ]
+     },
+     {
+      "Id": "958957469",
+      "Name": "Music_Target_2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_Target_2",
+      "GUID": "{359B61E4-7A0C-43FB-BCBF-F7D076025317}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "243768307"
+       }
+      ]
+     },
+     {
+      "Id": "958957468",
+      "Name": "Music_Target_3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_Target_3",
+      "GUID": "{472F695C-3AAF-4E97-8FBA-E0DDF9C65C2E}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "243768307"
+       }
+      ]
+     },
+     {
+      "Id": "958957467",
+      "Name": "Music_Target_4",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_Target_4",
+      "GUID": "{2C941C7E-79FB-42F8-AFD8-513E89CE3AE5}",
       "MaxAttenuation": "15",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -229,6 +268,6 @@
     ]
    }
   ],
-  "FileHash": "{D82B027F-5417-2E1E-3B79-6379D965DE24}"
+  "FileHash": "{A2504BC8-54A9-773D-D37F-71B38C6A3618}"
  }
 }

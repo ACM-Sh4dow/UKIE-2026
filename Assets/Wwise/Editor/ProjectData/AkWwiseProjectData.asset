@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 4dcd19903c2f8049b012156084a45f3f
     GuidInternal: 
-    m_lastTime: -8584294190988440238
+    m_lastTime: -8584294651565411478
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5cfb63d19daf845b0413e6022b25083
     GuidInternal: 
-    m_lastTime: -8584294190988578368
+    m_lastTime: -8584294181632037920
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b8952b5446dc0a45aa17981662e44dc5
     GuidInternal: 
-    m_lastTime: -8584294190988479315
+    m_lastTime: -8584294651565460671
     List: []
   - PhysicalPath: SoundBanks\Soundbanks WU.wwu
     PathAndIcons:
@@ -113,7 +113,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks WU
     guid: 0e1ce72fe564f84abf440246125e9b2f
     GuidInternal: 
-    m_lastTime: -8584294190988479315
+    m_lastTime: -8584294151303162664
     List:
     - name: Main
       guid: a1294a370e2c8747b0c7557dbcdfb016
@@ -141,7 +141,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8f1f2d81bf10524c87969d208461c1b5
     GuidInternal: 
-    m_lastTime: -8584294190988649045
+    m_lastTime: -8584294151306098499
     List:
     - name: Movement_Start
       guid: 399e6eb37005d743bec05f9fd272dace
@@ -194,9 +194,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Music_Piano
+    - name: Music_Target_1
       guid: f737688a38787342a86023392745559d
-      id: 5741148
+      id: 958957470
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -204,10 +204,61 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 8f1f2d81bf10524c87969d208461c1b5
-      - ElementName: Music_Piano
+      - ElementName: Music_Target_1
         ObjectType: 3
         guid: f737688a38787342a86023392745559d
-      Path: Events\Default Work Unit\Music_Piano
+      Path: Events\Default Work Unit\Music_Target_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Target_2
+      guid: e4619b350c7afb43bcbff7d076025317
+      id: 958957469
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music_Target_2
+        ObjectType: 3
+        guid: e4619b350c7afb43bcbff7d076025317
+      Path: Events\Default Work Unit\Music_Target_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Target_3
+      guid: 5c692f47af3a974e8fbae0ddf9c65c2e
+      id: 958957468
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music_Target_3
+        ObjectType: 3
+        guid: 5c692f47af3a974e8fbae0ddf9c65c2e
+      Path: Events\Default Work Unit\Music_Target_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Target_4
+      guid: 7e1c942cfb79f842afd8513e89ce3ae5
+      id: 958957467
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8f1f2d81bf10524c87969d208461c1b5
+      - ElementName: Music_Target_4
+        ObjectType: 3
+        guid: 7e1c942cfb79f842afd8513e89ce3ae5
+      Path: Events\Default Work Unit\Music_Target_4
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -257,7 +308,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6d425bf59b107a4280552a1dfe2d0d80
     GuidInternal: 
-    m_lastTime: -8584294190988649045
+    m_lastTime: -8584294181635483495
     List:
     - name: DistanceFromTarget
       guid: fd1184851fa5df4e8b8811b44051cfbd
@@ -285,7 +336,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 042d04aa3c0af846b3c356a37b59a05a
     GuidInternal: 
-    m_lastTime: -8584294190988466133
+    m_lastTime: -8584294651565440670
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -299,7 +350,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e50c630abc570542a558c001d19a807d
     GuidInternal: 
-    m_lastTime: -8584294190988460939
+    m_lastTime: -8584294651565426420
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -313,10 +364,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 022d1d461de465458197551c0f986d04
     GuidInternal: 
-    m_lastTime: -8584294190988455761
+    m_lastTime: -8584294651565413710
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000f00000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
