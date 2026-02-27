@@ -48,6 +48,8 @@ public class PerspectivePuzzleSolve : MonoBehaviour
         {
             solvingPlayer.GivePuzzle(this);
         }
+        
+        SolvePuzzle();
     }
 
     #endregion
