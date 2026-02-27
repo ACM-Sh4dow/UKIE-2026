@@ -7,6 +7,8 @@ public class ProtagonistController : MonoBehaviour
 {
     #region Variables
 
+    [SerializeField] private float stepHeight = 0.3f;
+
     public Camera camera;
     public GameObject activeCameraIndicator;
     public static ProtagonistController Instance;
@@ -99,6 +101,61 @@ public class ProtagonistController : MonoBehaviour
     public void SyncLookInput(Vector2 input)
     {
         lookInput = input;
+    }
+
+    #endregion
+    #region Step
+
+    private bool TryStepUp(Vector3 moveVelocity, ref Vector3 position)
+    {
+        if (moveVelocity.magnitude < FloatingPointErrorCheck) return false;
+
+        Vector3 moveDir = new Vector3(moveVelocity.x, 0f, moveVelocity.z).normalized;
+        float moveDist = new Vector3(moveVelocity.x, 0f, moveVelocity.z).magnitude;
+
+        // Cast forward from stepHeight above current position to check for a surface to land on
+        Vector3 stepCheckOrigin = position + Vector3.up * stepHeight;
+        Vector3 point1 = stepCheckOrigin + Vector3.up * capsulePointFromCenter;
+        Vector3 point2 = stepCheckOrigin - Vector3.up * capsulePointFromCenter;
+
+        // First, check there's actually something blocking us at foot level
+        RaycastHit forwardHit;
+        Vector3 footPoint1 = position + Vector3.up * capsulePointFromCenter;
+        Vector3 footPoint2 = position - Vector3.up * capsulePointFromCenter;
+
+        if (!Physics.CapsuleCast(footPoint1, footPoint2, capsuleRadius * LeewayFraction,
+                moveDir, out forwardHit, moveDist + FloatingPointErrorCheck,
+                ~0, QueryTriggerInteraction.Ignore))
+        {
+            return false; // Nothing blocking, no step needed
+        }
+
+        float hitAngle = Vector3.Angle(Vector3.up, forwardHit.normal);
+        if (hitAngle <= MaxSlopeAngle) return false; // It's a walkable slope, not a step
+
+        // Now check if the raised capsule can move forward without hitting anything
+        if (Physics.CapsuleCast(point1, point2, capsuleRadius * LeewayFraction,
+                moveDir, moveDist + FloatingPointErrorCheck,
+                ~0, QueryTriggerInteraction.Ignore))
+        {
+            return false; // Something is blocking even at step height, can't step up
+        }
+
+        // Cast downward from the raised forward position to find the step surface
+        Vector3 raisedForwardPos = stepCheckOrigin + moveDir * (moveDist + FloatingPointErrorCheck);
+        RaycastHit downHit;
+
+        if (!Physics.Raycast(raisedForwardPos, Vector3.down, out downHit,
+                stepHeight + FloatingPointErrorCheck, ~0, QueryTriggerInteraction.Ignore))
+        {
+            return false; // No surface found below
+        }
+
+        float stepUp = stepHeight - downHit.distance;
+        if (stepUp <= 0) return false; // Surface is not higher than current position
+
+        position.y += stepUp + FloatingPointErrorCheck;
+        return true;
     }
 
     #endregion
@@ -292,8 +349,14 @@ public class ProtagonistController : MonoBehaviour
         Vector3 moveDirection = Quaternion.Euler(0, camera.transform.eulerAngles.y, 0) * newMovementInput;
 
         velocity = moveDirection * movementSpeed;
-        velocity = CollideAndSlide(velocity * Time.deltaTime, transform.position, moveDirection, 0);
+        Vector3 intendedVelocity = velocity * Time.deltaTime;
 
+        // Attempt step-up before resolving collisions
+        Vector3 positionBeforeStep = transform.position;
+        bool steppedUp = isGrounded && TryStepUp(intendedVelocity, ref positionBeforeStep);
+        if (steppedUp) transform.position = positionBeforeStep;
+
+        velocity = CollideAndSlide(intendedVelocity, transform.position, moveDirection, 0);
         transform.position += velocity;
 
         #endregion
