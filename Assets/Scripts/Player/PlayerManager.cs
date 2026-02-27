@@ -11,10 +11,13 @@ public class PlayerManager : MonoBehaviour
     public GameObject[] playerPrefabs;
     public static List<ProtagonistController> players = new List<ProtagonistController>();
 
+    public static PlayerManager Instance;
     public static ProtagonistController player;
 
     private void Start()
     {
+        Instance = this;
+
         for (int i = 0; i < 4; i++)
         {
             var spawned = Instantiate(playerPrefabs[i], spawnPositions[i], Quaternion.Euler(spawnRotations[i]), this.transform);
