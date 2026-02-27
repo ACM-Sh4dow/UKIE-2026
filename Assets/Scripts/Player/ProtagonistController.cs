@@ -56,6 +56,8 @@ public class ProtagonistController : MonoBehaviour
     private float verticalVelocity; // Separate gravity velocity
     private bool isGrounded;
 
+    private AkAudioListener audioListener;
+
     #endregion
     #region Initialization
 
@@ -68,6 +70,8 @@ public class ProtagonistController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         targetYaw = transform.rotation.eulerAngles.y;
+
+        audioListener = GetComponentInChildren<AkAudioListener>();
     }
 
     #endregion
@@ -78,10 +82,6 @@ public class ProtagonistController : MonoBehaviour
         if (input.started)
         {
             walkingStarted = true;
-        }
-        else
-        {
-            walkingStarted = false;
         }
 
         movementInput = input.ReadValue<Vector2>();
@@ -277,10 +277,12 @@ public class ProtagonistController : MonoBehaviour
         if (Instance == this)
         {
             activeCameraIndicator.SetActive(true);
+            audioListener.enabled = true;
         }
         else
         {
             activeCameraIndicator.SetActive(false);
+            audioListener.enabled = false;
             return;
         }
 
@@ -333,13 +335,15 @@ public class ProtagonistController : MonoBehaviour
 
         if (walkingStarted)
         {
-            SoundCoroutine = StartCoroutine(BeginWalking());
+            Debug.Log("Audio: Movement_Start");
+            AkUnitySoundEngine.PostEvent("Movement_Start", gameObject);
             walkingStarted = false;
         }
 
-        if (walkingFinished && SoundCoroutine != null)
+        if (walkingFinished)
         {
-            StopCoroutine(SoundCoroutine);
+            Debug.Log("Audio: Movement_Stop");
+            AkUnitySoundEngine.PostEvent("Movement_Stop", gameObject);
 
             // Finish Walking sfx
             walkingFinished = false;
