@@ -2231,6 +2231,11 @@
 						<MusicSegment Name="Menu OST" ID="{50FB30E2-D5B9-44F2-A859-E9D39F53B65D}" ShortID="436088867">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="274895.827664399"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

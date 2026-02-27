@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3962140920	Music_Title_Stop			\Default Work Unit\Music_Title_Stop	
 	3991942870	Music			\Default Work Unit\Music	
 	4088074013	Take_Photo			\Default Work Unit\Take_Photo	
+	4195921398	MusicTest			\Default Work Unit\MusicTest	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2279743627	Game_Progress			\Default Work Unit\Game_Progress	
