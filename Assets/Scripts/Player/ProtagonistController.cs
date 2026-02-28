@@ -8,6 +8,8 @@ public class ProtagonistController : MonoBehaviour
 {
     #region Variables
 
+    public GameObject cameraHolder;
+    
     [SerializeField] private float stepHeight = 0.3f;
 
     public Camera camera;
@@ -278,10 +280,15 @@ public class ProtagonistController : MonoBehaviour
         targetYaw = ClampAngle(targetYaw, float.MinValue, float.MaxValue);
         targetPitch = ClampAngle(targetPitch, BottomClamp, TopClamp);
 
-        transform.rotation = Quaternion.Euler(
+        cameraHolder.transform.rotation = Quaternion.Euler(
             targetPitch,
             targetYaw + RotationOffset,
             0f);
+
+        transform.rotation = Quaternion.Euler(
+            0,
+            targetYaw + RotationOffset,
+            0);
     }
 
     private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
